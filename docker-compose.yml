@@ -19,10 +19,8 @@ services:
       - 5601:5601
     expose:
       - "5601" 
-    environment:
-      OPENSEARCH_HOSTS: "http://secure-devpillow-study.us-east-1.opensearch.localhost.localstack.cloud:4566"
-      OPENSEARCH_USERNAME: "admin"
-      OPENSEARCH_PASSWORD: "devpillowsecurepassword"
+    env_file:
+      - .env
     networks:
       - ls
     dns:

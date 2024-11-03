@@ -1,5 +1,5 @@
 {
-    "DomainName": "secure-devpillow-study",
+    "DomainName": <domain-name>,
     "ClusterConfig": {
         "InstanceType": "r5.large.search",
         "InstanceCount": 1,
@@ -25,8 +25,8 @@
         "Enabled": true,
         "InternalUserDatabaseEnabled": true,
         "MasterUserOptions": {
-            "MasterUserName": "admin",
-            "MasterUserPassword": "devpillowsecurepassword"
+            "MasterUserName": <domain-user>,
+            "MasterUserPassword": <domain-password>
         }
     }
 }
